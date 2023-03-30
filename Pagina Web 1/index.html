@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Web 1 | Pelayo R.</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h2 class="logo">Pelayo R.</h2>
+        <nav class="navegacion">
+            <a href="#">Inicio</a>
+            <a href="#">Informacion</a>
+            <a href="#">Producto</a>
+            <a href="#">Contacto</a>
+            <button class="botonregistro">Iniciar sesión</button>
+        </nav>
+    </header>
+
+    <div class="envoltorio">
+        <span class="simbolo-cierre"><ion-icon name="close"></ion-icon></span>
+        <div class="formulario iniciosesion">
+            <h2>Iniciar sesión</h2>
+            <form action="#">
+                <div class="caja-entrada">
+                    <span class="simbolo"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Correo Electronico</label>
+                </div>
+                <div class="caja-entrada">
+                    <span class="simbolo"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Contraseña</label>
+                </div>
+                <div class="recordar-olvidar">
+                    <label><input type="checkbox"></label>
+                    <a href="#">¿Has olvidado tu contraseña?</a>
+                </div>
+                <button type="submit" class="btn">Iniciar sesión</button>
+                <div class="iniciosesion-registrarse">
+                    <p>¿No tienes cuenta?<a href="#" class="link-registro">Registrarse</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="formulario registrarse">
+            <h2>Registrarse</h2>
+            <form action="#">
+                <div class="caja-entrada">
+                    <span class="simbolo"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" required>
+                    <label>Nombre de usuario</label>
+                </div>
+                <div class="caja-entrada">
+                    <span class="simbolo"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Correo Electronico</label>
+                </div>
+                <div class="caja-entrada">
+                    <span class="simbolo"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Contraseña</label>
+                </div>
+                <div class="recordar-olvidar">
+                    <label><input type="checkbox"></label>
+                    <a href="#">Estoy de acuerdo con los términos y condiciones</a>
+                </div>
+                <button type="submit" class="btn">Registrarse</button>
+                <div class="iniciosesion-registrarse">
+                    <p>¿Ya tienes cuenta? <a href="#" class="link-iniciosesion">Inicia sesión</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</body>
+</html>
